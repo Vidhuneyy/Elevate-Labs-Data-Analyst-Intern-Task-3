@@ -27,7 +27,6 @@ DATASET: [data.csv](https://github.com/user-attachments/files/19888911/data.csv)
 - Table creation with columns: `Email`, `Address`, `Avatar`, `Time_on_App`, `Time_on_Website`, `Length_of_Membership`, `Yearly_Amount_Spent`.
 - Full dataset insertion with manual and batch SQL queries.
 - Creation of analytical views:
-  - `HighSpenders`: Filters customers with yearly spending over $500.
   - `avatar_info`: Aggregates customer count per avatar type.
 - SQL queries to explore time spent on platforms vs. customer loyalty and spend.
 
@@ -56,11 +55,7 @@ Email, Address, Avatar, Time_on_App, Time_on_Website, Length_of_Membership, Year
 Multiple INSERT INTO statements populate the customer table with real data from a CSV file (converted into SQL format).
 
 3. Create Views for Analysis
-View 1: HighSpenders
-
-Filters customers whose Yearly_Amount_Spent > 500.
-
-View 2: avatar_info
+View : avatar_info
 
 Groups customers by Avatar and counts how many use each type.
 
