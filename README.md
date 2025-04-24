@@ -5,7 +5,7 @@ This project uses **SQL Server** to analyze customer behavioral data, such as ti
 
 ---
 
-## 📁 Files Included
+# 📁 Files Included
 
 SQL QUERY: 
 
@@ -22,7 +22,7 @@ DATASET: [data.csv](https://github.com/user-attachments/files/19888911/data.csv)
 
 ---
 
-## 🧠 Features
+# 🧠 Features
 
 - Table creation with columns: `Email`, `Address`, `Avatar`, `Time_on_App`, `Time_on_Website`, `Length_of_Membership`, `Yearly_Amount_Spent`.
 - Full dataset insertion with manual and batch SQL queries.
@@ -32,46 +32,40 @@ DATASET: [data.csv](https://github.com/user-attachments/files/19888911/data.csv)
 
 ---
 
-## 🛠️ Tools Used
+# 🛠️ Tools Used
 
 - SQL Server Management Studio (SSMS)
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 1. Open  in SSMS.
 2. Execute the script to create and populate the table.
 3. Run the view creation and analytical queries to explore insights
 
 
-## ✅ Steps in SQLQuery3.sql
-1. Create Table
-A customer table is created with appropriate columns and data types:
+# ✅ Steps in SQLQuery3.sql
 
-Email, Address, Avatar, Time_on_App, Time_on_Website, Length_of_Membership, Yearly_Amount_Spent.
+## 1. Create Table
+    A customer table is created with appropriate columns and data types:
+    Email, Address, Avatar, Time_on_App, Time_on_Website, Length_of_Membership, Yearly_Amount_Spent.
 
-2. Insert Data
-Multiple INSERT INTO statements populate the customer table with real data from a CSV file (converted into SQL format).
+## 2. Insert Data
+    Multiple INSERT INTO statements populate the customer table with real data from a CSV file (converted into SQL format).
 
-3. Create Views for Analysis
-View : avatar_info
+## 3. Create Views for Analysis
+    View : avatar_info
+    Groups customers by Avatar and counts how many use each type.
 
-Groups customers by Avatar and counts how many use each type.
-
-4. Aggregation & Grouping
-Queries are used to explore:
-
-Total number of users per avatar.
-
-High spenders and their engagement levels.
-
-5. Error Handling & Object Checks
-Prior to creating views or tables, checks are added to:
-
-Drop them if they already exist using IF OBJECT_ID(...) IS NOT NULL logic.
-
-Ensure smooth script execution across multiple runs.
+## 4. Aggregation & Grouping
+    Queries are used to explore:
+    Total number of users per avatar.
+   
+## 6. Error Handling & Object Checks
+    Prior to creating views or tables, checks are added to:
+    Drop them if they already exist using IF OBJECT_ID(...) IS NOT NULL logic.
+    Ensure smooth script execution across multiple runs.
 
 ## Outcome
 
